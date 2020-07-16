@@ -68,6 +68,12 @@
 			<artifactId>reactor-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>3.12.6</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<plugins>

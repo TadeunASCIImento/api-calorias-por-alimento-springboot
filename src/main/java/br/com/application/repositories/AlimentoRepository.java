@@ -7,6 +7,7 @@ import org.bson.Document;
 import org.springframework.stereotype.Repository;
 
 import com.mongodb.ConnectionString;
+import com.mongodb.MongoClientOptions;
 import com.mongodb.MongoClientSettings;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
@@ -21,8 +22,13 @@ public class AlimentoRepository {
 
 	private static MongoCollection<Document> getCollection() {
 		try {
+			MongoClientOptions.Builder builder = new MongoClientOptions.Builder();
+			// build the connection options
+			builder.maxConnectionIdleTime(160000);// set the max wait time in (ms)
+			MongoClientOptions opts = builder.build();
 			ConnectionString connectionString = new ConnectionString(
-					"mongodb+srv://TadeunASCIImento:Ted43497853@cluster0.g738r.mongodb.net/db_aliemntos?retryWrites=true&w=majority&connectTimeoutMS=120000");
+					"mongodb+srv://TadeunASCIImento:Ted43497853@cluster0.g738r.mongodb.net/db_aliemntos?retryWrites=true&w=majority"
+							+ opts);
 			MongoClientSettings settings = MongoClientSettings.builder().applyConnectionString(connectionString)
 					.retryWrites(true).build();
 			MongoClient mongoClient = MongoClients.create(settings);
@@ -52,6 +58,5 @@ public class AlimentoRepository {
 		}
 		return alimentos;
 	}
-
 
 }

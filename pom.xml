@@ -70,11 +70,10 @@
 		</dependency>
 		<dependency>
 			<groupId>org.mongodb</groupId>
-			<artifactId>mongodb-driver-core</artifactId>
-			<version>4.0.4</version><!--$NO-MVN-MAN-VER$-->
+			<artifactId>mongodb-driver</artifactId>
+			<version>3.12.5</version>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>

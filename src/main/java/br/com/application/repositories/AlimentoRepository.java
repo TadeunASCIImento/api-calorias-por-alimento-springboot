@@ -22,7 +22,7 @@ public class AlimentoRepository {
 	private static MongoCollection<Document> getCollection() {
 		try {
 			ConnectionString connectionString = new ConnectionString(
-					"mongodb+srv://TadeunASCIImento:Ted43497853@cluster0.g738r.mongodb.net/db_aliemntos?retryWrites=true&w=majority");
+					"mongodb://TadeunASCIImento:Ted4349785@cluster0-shard-00-00.g738r.mongodb.net:27017,cluster0-shard-00-01.g738r.mongodb.net:27017,cluster0-shard-00-02.g738r.mongodb.net:27017/db_alimentos?ssl=true&replicaSet=atlas-11me2x-shard-0&authSource=admin&retryWrites=true&w=majority");
 			MongoClientSettings settings = MongoClientSettings.builder().applyConnectionString(connectionString)
 					.retryWrites(true).build();
 			MongoClient mongoClient = MongoClients.create(settings);

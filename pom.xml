@@ -70,8 +70,8 @@
 		</dependency>
 		<dependency>
 			<groupId>org.mongodb</groupId>
-			<artifactId>mongodb-driver</artifactId>
-			<version>3.12.5</version>
+			<artifactId>mongodb-driver-core</artifactId>
+			<version>4.0.4</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 	</dependencies>
 

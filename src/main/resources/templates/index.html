@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<head>
+<meta charset="UTF-8">
+<title>API Calorias por Alimento</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+	<header></header>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>API de Calorias dos Alimentos</h1>
+			<p>
+				API de calorias contidas em alguns alimentos comumente consumidos
+				pelas pessoas.<br> Descrição do alimento, quantidade e valor
+				calórico.
+			</p>
+			<hr>
+			<h5>GET</h5>
+			<p class="get">Retorna as informações do alimento passado como
+				parâmetro na descrição.</p>
+			<p class="info-get">
+				https://tn-calorias-dos-alimentos.herokuapp.com/api/calorias/?descricao=<b>café</b>
+			</p>
+			<p class="resposta">Resposta em <b>Json</b>.</p>
+			<button type="button" class="btn-response" data-toggle="collapse"
+				data-target="#demo">Response</button>
+			<div id="demo" class="collapse">
+				<img class="img-response" src="/css/imagens/response.png">
+			</div>
+		</div>
+		<footer class="footer">
+			<a href="https://linkedin.com/in/tadeu-do-nascimento"> <img
+				src="/css/imagens/icone_linkedin.png" class="icone-linkedin" />
+			</a> <a href="https://github.com/TadeunASCIImento"> <img
+				src="/css/imagens/icone_github.png" class="icone-github" />
+			</a> <a href="mailto:tadeunascimentosp@gmail.com"> <img
+				src="/css/imagens/icone_email.png" class="icone-email" />
+			</a>
+			<p class="parag-foot">
+				Desenvolvido por Tadeu do Nascimento &copy; 2020
+			</p>
+		</footer>
+	</div>
+</body>
+</html>

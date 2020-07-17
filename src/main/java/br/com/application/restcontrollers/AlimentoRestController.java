@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import br.com.application.recursos.Alimento;
 import br.com.application.repositories.AlimentoRepository;
@@ -25,11 +26,15 @@ public class AlimentoRestController {
 	@RequestMapping(value = "/calorias", method = RequestMethod.GET)
 	@Consumes(MediaType.TEXT_PLAIN)
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<Alimento>findAll(@PathParam("descricao")String descricao) {
+	public List<Alimento> findAll(@PathParam("descricao") String descricao) {
 		List<Alimento> alimentos = repository.findByDescricao(descricao);
 		return alimentos;
 
+	}
 
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	public ModelAndView documentacao() {
+		return new ModelAndView("index");
 	}
 
 }

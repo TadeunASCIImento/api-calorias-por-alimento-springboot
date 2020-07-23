@@ -11,7 +11,7 @@
 	color: whitesmoke;
 	border: none;
 	margin: 10px 0px 0px 0px;
-	background-color: #fb5607;
+	background-color: #0077b6;
 	font-size: 1.4em;
 }
 
@@ -24,6 +24,7 @@
 
 header {
 	width: 100%;
+	padding:20px;
 	height: 90px;
 	box-shadow: 0 1px 3px 0 rgba(8, 7, 7, 0.16), 0 2px 5px 0
 		rgba(67, 53, 146, 0.12);
@@ -43,12 +44,12 @@ b {
 }
 
 .resposta {
-	margin: 120px 0px 0px 5px;
+	margin: 100px 0px 0px 5px;
 }
 
 h5 {
 	margin: 50px 20px 0px 0px;
-	background-color: #88d498;
+	background-color: #0077b6;
 	width: 150px;
 	height: 35px;
 	padding: 6px;
@@ -62,7 +63,7 @@ h5 {
 	background-color: #edf2f4;
 	width: 100%;
 	height: auto;
-	padding: 20px;
+	padding: 10px;
 	float: left;
 	border-radius: 5px;
 	text-align: justify;
@@ -90,13 +91,12 @@ p {
 }
 
 .footer {
-	border: solid 1px;
-	border-color: #edf2f4;
+	margin:100px 0px 0px 0px;
 	text-align: center;
 }
 
 .img-response {
-	width: 100%;
+	width: 50%;
 	margin-top: 20px;
 	border-radius: 5px;
 }

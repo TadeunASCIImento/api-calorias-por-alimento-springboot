@@ -77,8 +77,8 @@ p {
 	font-size: 1.3em;
 }
 
-.icone-github, .icone-linkedin {
-	margin: 20px 0px 0px 10px;
+.icone-github, .icone-linkedin,.icone-bitbucket {
+	margin: 20px 0px 0px 0px;
 	width: 40px;
 	height: 40px;
 	border-radius: 5px;

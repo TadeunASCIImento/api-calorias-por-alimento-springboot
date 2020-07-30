@@ -43,7 +43,7 @@ public class AlimentoRepository {
 			while (cursor.hasNext()) {
 				Document doc = cursor.next();
 				if (doc.getString("Alimento").contains(descricao) && descricao.length() > 2
-						&& doc.getString("Alimento").equalsIgnoreCase(descricao)) {
+						||doc.getString("Alimento").equalsIgnoreCase(descricao)) {
 					Alimento alimento = new Alimento();
 					alimento.setId(doc.get("_id"));
 					alimento.setDescricao(doc.getString("Alimento"));

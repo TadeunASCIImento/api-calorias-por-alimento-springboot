@@ -35,11 +35,15 @@ public class AlimentoRepository {
 	}
 
 	public List<Alimento> findByDescricao(String descricao) {
+
 		List<Alimento> alimentos = new ArrayList<Alimento>();
+
 		try (MongoCursor<Document> cursor = getCollection().find().iterator()) {
+
 			while (cursor.hasNext()) {
 				Document doc = cursor.next();
-				if (doc.getString("Alimento").contains(descricao) && descricao.length() > 2) {
+				if (doc.getString("Alimento").contains(descricao) && descricao.length() > 2
+						&& doc.getString("Alimento").equalsIgnoreCase(descricao)) {
 					Alimento alimento = new Alimento();
 					alimento.setId(doc.get("_id"));
 					alimento.setDescricao(doc.getString("Alimento"));

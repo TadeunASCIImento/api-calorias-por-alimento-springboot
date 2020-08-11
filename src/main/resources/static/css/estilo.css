@@ -19,13 +19,13 @@
 	background-color: white;
 	border: solid 1px;
 	border-color: #edf2f4;
-	margin-top: 20px;
+	margin-top: 5px;
 }
 
 header {
 	width: 100%;
-	padding:20px;
-	height: 90px;
+	padding:5px;
+	height: 60px;
 	box-shadow: 0 1px 3px 0 rgba(8, 7, 7, 0.16), 0 2px 5px 0
 		rgba(67, 53, 146, 0.12);
 }
@@ -70,31 +70,34 @@ h5 {
 }
 
 h1 {
-	margin: 0px 0px 20px 0px;
+	margin: 0px 0px 20px 20px;
 }
 
 p {
 	font-size: 1.3em;
 }
 
-.icone-github, .icone-linkedin,.icone-bitbucket {
-	margin: 20px 0px 0px 0px;
-	width: 40px;
-	height: 40px;
-	border-radius: 5px;
+.icone-email, .icone-github, .icone-linkedin, .icone-bitbucket {
+	margin: 0px 0px 0px 10px;
+	width: 30px;
+	height: 30px;
 }
 
 .icone-email {
-	margin-top: 20px; width : 45px;
-	height: 45px;
-	width: 45px;
+	margin: 0px 0px 0px 10px;
+	width: 32px;
+	height: 32px;
+}
+
+.icone-linkedin, .icone-bitbucket {
+	border-radius: 5px;
 }
 
 .footer {
-	margin:100px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 	text-align: center;
+	font-size: 0.7em;
 }
-
 .img-response {
 	width: 50%;
 	margin-top: 20px;

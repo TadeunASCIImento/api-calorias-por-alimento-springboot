@@ -7,5 +7,5 @@ Este projeto consiste de uma API que disponibiliza a quantidade de calorias cont
 ### https://caloriasporalimentoapi.herokuapp.com
 
 <p>
-  <img src="src/main/resources/static/imgens/img-api-alimentos.png">
+  <img src="/src/main/resources/static/imagens/img-api-alimentos.png">
 </p>

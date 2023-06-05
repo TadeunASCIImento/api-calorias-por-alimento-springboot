@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+* {
+	font-family: monospace;
+}
+
+.btn-response {
+	width: 150px;
+	height: 35px;
+	border-radius: 5px;
+	color: whitesmoke;
+	border: none;
+	margin: 10px 0px 0px 0px;
+	background-color: #0077b6;
+	font-size: 1.4em;
+}
+
+.jumbotron {
+	background-color: white;
+	border: solid 1px;
+	border-color: #edf2f4;
+	margin-top: 5px;
+}
+
+header {
+	width: 100%;
+	padding:5px;
+	height: 60px;
+	box-shadow: 0 1px 3px 0 rgba(8, 7, 7, 0.16), 0 2px 5px 0
+		rgba(67, 53, 146, 0.12);
+}
+
+b {
+	font-style: italic;
+	font-size: 1.2em;
+}
+
+.get {
+	margin: 10px 0px 10px 5px;
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	float: left;
+}
+
+.resposta {
+	margin: 100px 0px 0px 5px;
+}
+
+h5 {
+	margin: 50px 20px 0px 0px;
+	background-color: #0077b6;
+	width: 150px;
+	height: 35px;
+	padding: 6px;
+	text-align: center;
+	border-radius: 5px;
+	color: #ffffff;
+}
+
+.info-get {
+	margin: 0px 270px 0px 0px;
+	background-color: #edf2f4;
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	float: left;
+	border-radius: 5px;
+	text-align: justify;
+}
+
+h1 {
+	margin: 0px 0px 20px 20px;
+}
+
+p {
+	font-size: 1.3em;
+}
+
+.icone-email, .icone-github, .icone-linkedin, .icone-bitbucket {
+	margin: 0px 0px 0px 10px;
+	width: 30px;
+	height: 30px;
+}
+
+.icone-email {
+	margin: 0px 0px 0px 10px;
+	width: 32px;
+	height: 32px;
+}
+
+.icone-linkedin, .icone-bitbucket {
+	border-radius: 5px;
+}
+
+.footer {
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	font-size: 0.7em;
+}
+.img-response {
+	width: 50%;
+	margin-top: 20px;
+	border-radius: 5px;
+}

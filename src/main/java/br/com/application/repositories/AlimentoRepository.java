@@ -22,7 +22,7 @@ public class AlimentoRepository {
 	private static MongoCollection<Document> getCollection() {
 		try {
 			ConnectionString connectionString = new ConnectionString(
-					"mongodb+srv://TadeunASCIImento:destroyer43497853@cluster0.g738r.mongodb.net/<db_alimentos>?retryWrites=true&w=majority");
+					"mongodb+srv://TadeunASCIImento:c7ZRQXR02xGFRxu6@cluster0.g738r.mongodb.net/<db_alimentos>?retryWrites=true&w=majority");
 			MongoClientSettings settings = MongoClientSettings.builder().applyConnectionString(connectionString)
 					.retryWrites(true).build();
 			MongoClient mongoClient = MongoClients.create(settings);
